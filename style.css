@@ -1,0 +1,97 @@
+/* Full page layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #fff;
+}
+
+/* File upload input */
+input[type="file"] {
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Predict button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result area */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    color: #000000;
+}
+#previewImage {
+    display: none;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-top: 20px;
+    border: 2px solid #333;      
+    border-radius: 10px;         
+    background-color: #f4f4f4;  
+    padding: 8px;
+}
+#previewImage:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+/* Add this to style.css */
+.drop-zone {
+    border: 3px dashed rgba(255, 255, 255, 0.5); /* Make the drop area visible */
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.drop-zone.dragover {
+    border-color: #4CAF50; /* Highlight color when dragging a file */
+    background: rgba(76, 175, 80, 0.1);
+    transform: scale(1.02);
+}
+
