@@ -8,3 +8,20 @@ Real-time predictions using FastAPI
 Clean UI built with HTML, CSS & JavaScript
 Auto-cleanup of uploaded images
 Easy to extend and deploy
+
+
+brain-tumor-detection/
+│
+├── app/
+│   ├── main.py              # FastAPI routes (predict + UI)
+│   ├── model_utils.py       # Loads DL model + prediction logic
+│   ├── static/              # Frontend UI
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── uploads/             # Temporary image files
+│   └── model/
+│       └── brain_tumor_cnn.h5
+│
+├── requirements.txt
+└── README.md
